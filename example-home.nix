@@ -22,8 +22,10 @@
   # 4. Program Configurations
   programs.git = {
     enable = true;
-    userName = "Nix Demo";
-    userEmail = "nix@demo.com";
+    settings = {
+      user.name = "Nix Demo";
+      user.email = "nix@demo.com";
+    };
   };
 
   programs.zsh = {
