@@ -9,13 +9,13 @@
   home.packages = [
     pkgs.htop
     pkgs.git
-    pkgs.nvim
+    pkgs.vim
     pkgs.firefox
   ];
 
   # 3. Environment Variables
   home.sessionVariables = {
-    EDITOR = "nvim";
+    EDITOR = "vim";
   };
 
   # 4. Program Configurations
