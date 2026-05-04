@@ -16,6 +16,7 @@
   # 3. Environment Variables
   home.sessionVariables = {
     EDITOR = "vim";
+    PROMPT = "'%F{blue}%~ %(?.%F{green}.%F{red})%#%f '";
   };
 
   # 4. Program Configurations
@@ -25,7 +26,7 @@
     userEmail = "nix@demo.com";
   };
 
-  programs.bash = {
+  programs.zsh = {
     enable = true;
     shellAliases = {
       ll = "ls -l";
