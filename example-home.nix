@@ -23,8 +23,9 @@
   programs.git = {
     enable = true;
     settings = {
-      user.name = "Nix Demo";
-      user.email = "nix@demo.com";
+      user.name = "FIXME";
+      user.email = "FIXME";
+      gitreview.username = "FIXME";
     };
   };
 
