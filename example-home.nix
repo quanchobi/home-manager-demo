@@ -15,8 +15,8 @@
 
   # 3. Environment Variables
   home.sessionVariables = {
-    EDITOR = "vim";
-    PROMPT = "'%F{blue}%~ %(?.%F{green}.%F{red})%#%f '";
+    EDITOR = "vim"; # The best editor
+    PROMPT = "%F{blue}%~ %(?.%F{green}.%F{red})%#%f ";
   };
 
   # 4. Program Configurations
@@ -37,7 +37,7 @@
     };
   };
 
-  # 5. State Version (Required)
+  # 5. State Version (Required for compatability reasons)
   home.stateVersion = "25.11";
 
   # Let Home Manager install and manage itself.
