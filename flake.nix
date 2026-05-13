@@ -14,7 +14,7 @@
     { nixpkgs, home-manager, ... }:
     let
       system = "x86_64-linux"; # or "aarch64-linux" / "aarch64-darwin"
-      pkgs = nixpkgs.legacyPackages.${system}; # I don't know why it's called legacyPackages
+      pkgs = nixpkgs.legacyPackages.${system};
     in
     {
       homeConfigurations."ubuntu" = home-manager.lib.homeManagerConfiguration {

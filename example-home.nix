@@ -9,13 +9,13 @@
   home.packages = [
     pkgs.htop
     pkgs.git
-    pkgs.vim
+    pkgs.nano
     pkgs.firefox
   ];
 
   # 3. Environment Variables
   home.sessionVariables = {
-    EDITOR = "vim"; # The best editor
+    EDITOR = "nano"; # The ***best*** editor
     PROMPT = "%F{blue}%~ %(?.%F{green}.%F{red})%#%f ";
   };
 
@@ -23,9 +23,9 @@
   programs.git = {
     enable = true;
     settings = {
-      user.name = "FIXME";
-      user.email = "FIXME";
-      gitreview.username = "FIXME";
+      user.name = "ubuntu";
+      user.email = "ubuntu@canonical.com";
+      gitreview.username = "ubuntu";
     };
   };
 
@@ -33,7 +33,6 @@
     enable = true;
     shellAliases = {
       ll = "ls -l";
-      update = "home-manager switch";
     };
   };
 
